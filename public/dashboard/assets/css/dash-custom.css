@@ -1,0 +1,13 @@
+.campaign-card-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.timeline-widget .timeline-item .timeline-desc {
+    padding: 12px 16px !important;
+}
+
+.recent-donation-card {
+    min-height: 450px;
+}

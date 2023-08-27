@@ -1,0 +1,35 @@
+@page {
+    size: A4;
+    margin: 2.5em;
+}
+
+@media print {
+    html,
+    body,
+    body * {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+        visibility: hidden;
+    }
+
+    #invoice-box,
+    #invoice-box * {
+        visibility: visible;
+    }
+
+    #invoice-box {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #invoice-box,
+    #invoice-box * {
+        page-break-inside: avoid;
+        visibility: visible;
+    }
+}
